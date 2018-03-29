@@ -29,7 +29,7 @@ export class TodosComponent implements OnInit {
         return a.checkStatus - b.checkStatus;
       }) 
 
-      console.log(this.todoListArray);
+      
 
       
       
@@ -48,7 +48,7 @@ export class TodosComponent implements OnInit {
  
     }
     else{
-      alert("Come on, let's do something productive today.")
+      alert("Come on, let's do something productive today. Feel free to put down your thoughts!")
       
     }
   }
