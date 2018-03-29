@@ -11,6 +11,10 @@ li.list-group-item.completed label {
     
 }
 
+li.list-group-item {
+    overflow: auto;
+}
+
 label {
     color:#233cac;
     margin-left: 10px;

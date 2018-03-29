@@ -40,8 +40,17 @@ export class TodosComponent implements OnInit {
 
   addItemToList(itemTitle)
   {
-    this.todoService.addToDoListItem(itemTitle.value);
-    itemTitle.value=null;
+    
+    if(itemTitle.value!="" || itemTitle.value.trim()!="")
+    {
+      this.todoService.addToDoListItem(itemTitle.value.trim());
+      itemTitle.value=null;
+ 
+    }
+    else{
+      alert("Come on, let's do something productive today.")
+      
+    }
   }
 
   checkStatusOfItem($key:string, checkStatus)

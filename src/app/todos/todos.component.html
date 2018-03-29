@@ -1,10 +1,19 @@
 
-  <h3 class="text-center"> Let's be productive today! </h3>
+  <h3 class="text-center"> Let's Get It Done! </h3>
 
 
 <div class="input-group">
-  <input type="text" class="form-control" #itemName required placeholder="I'm here to keep you organized " (keyup.enter)="addItemToList(itemName)">
-
+  <input id="itemName" class="form-control"  
+    #itemName placeholder="I'm here to keep you organized " 
+    (keyup.enter)="addItemToList(itemName)" required minlength="1"  >
+  <div *ngIf="itemName.invalid && (itemName.dirty || itemName.touched)" class="alert alert-danger">
+    <div *ngIf="itemName.errors.required">
+      Come on, you can't create an empty task ! 
+    </div>
+    <div *ngIf="itemName.errors.minlength">
+      Again, don't try to while away and write down what you want to do today!
+    </div>
+  </div>
 
 </div>
 
