@@ -1,0 +1,45 @@
+.jumbotron {
+    background-color: beige;
+}
+
+
+
+
+li.list-group-item.completed label {
+    text-decoration: line-through;
+    color: rgba(46, 21, 78, 0.589);
+    
+}
+
+label {
+    color:#233cac;
+    margin-left: 10px;
+}
+.text-center {
+    margin-bottom: 20%;
+    margin-top:20%;
+    opacity: 0.5;
+    color:#17a2b8; 
+}
+
+
+.footer {
+	color: #17a2b8;
+	padding: 10px 15px;
+	height: 20px;
+	text-align: center;
+	border-top: 1px solid #e6e6e6;
+}
+
+ ::placeholder {
+    color:#17a2b8;
+
+}
+
+::text {
+    color: #17a2b8;
+}
+
+.form-control {
+    margin-bottom: 10px; 
+}

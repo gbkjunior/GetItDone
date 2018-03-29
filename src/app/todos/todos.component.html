@@ -1,0 +1,28 @@
+
+  <h3 class="text-center"> Let's be productive today! </h3>
+
+
+<div class="input-group">
+  <input type="text" class="form-control" #itemName required placeholder="I'm here to keep you organized " (keyup.enter)="addItemToList(itemName)">
+
+
+</div>
+
+<div class="list-group">
+  <section class="main" *ngIf="todoListArray?.length > 0">
+  <li class="list-group-item" *ngFor="let todo of todoListArray" [class.completed]="todo.checkStatus" >
+    <span class="hover-cursor" [class.text-info]="todo.checkStatus" (click)="checkStatusOfItem(todo.$key, todo.checkStatus)">
+      <i class="fa fa-lg" [ngClass]="todo.checkStatus?'fa fa-check-square-o': 'fa fa-square-o'"></i>
+    </span>
+    <label >{{todo.title}}</label>
+    <span class="hover-cursor pull-right" (click)="removeItemFromList(todo.$key)">
+      <i class="fa fa-times"></i>
+    </span>
+  </li>
+  </section>
+
+
+  <!--footer class="footer" *ngIf="todoListArray?.length > 0">
+      <span class="todo-count"><strong>{{todoListArray.length}}</strong> {{todoListArray.length == 1 ? 'item' : 'items'}} left</span>
+    </footer-->
+</div>

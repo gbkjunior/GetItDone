@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+.hover-cursor {
+    cursor: pointer;
+    margin: 2px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+}
+.form-control list-group-item {
+    margin: 10px;
+}
+.hover-cursor i.fa.fa-times {
+    visibility: hidden;
+}
+
+.hover-cursor:hover i.fa.fa-times {
+    visibility: visible;
+    color: red;
+    opacity: 0.5;
+}
+body {
+    background-color: #ffde0757;
+}
