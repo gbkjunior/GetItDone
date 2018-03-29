@@ -1,6 +1,6 @@
 # GetItDone with ToDo Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
+A simple To-Do List Application using AngularJS and FireBase.
 
 ## Running the Application:
 
