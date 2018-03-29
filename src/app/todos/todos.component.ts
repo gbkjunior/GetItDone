@@ -41,7 +41,7 @@ export class TodosComponent implements OnInit {
   addItemToList(itemTitle)
   {
     
-    if(itemTitle.value!="" || itemTitle.value.trim()!="")
+    if(itemTitle.value!="" && itemTitle.value.trim()!="")
     {
       this.todoService.addToDoListItem(itemTitle.value.trim());
       itemTitle.value=null;
