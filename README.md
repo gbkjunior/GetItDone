@@ -8,7 +8,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 2. Clone the project on to your local repositary.
 
-3. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files. 
+3. Run `npm install` 
+
+3. Then run `ng serve` or `npm start` for a dev server to start. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files. 
 
 
 
